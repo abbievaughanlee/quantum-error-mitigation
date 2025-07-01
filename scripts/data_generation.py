@@ -1,4 +1,4 @@
-from qiskit import QuantumCircuit
+
 from qiskit.circuit.random import random_circuit
 from qiskit import transpile
 
@@ -12,11 +12,11 @@ from tqdm import tqdm
 # initial configuration of circuit
 NUM_QUBITS = 2 
 # number of layers of gates in each circuit
-CIRCUIT_DEPTH = 5 
+CIRCUIT_DEPTH = 10 # increased from five for round 2
 NUM_SAMPLES = 5000
 SHOTS = 1024
 # probability of depolarizing error for each gate
-ERROR_PROB = 0.01 
+ERROR_PROB = 0.05 
 OUTPUT_FILE = f'data/dataset_{NUM_QUBITS}q_d{CIRCUIT_DEPTH}.npz'
 
 
