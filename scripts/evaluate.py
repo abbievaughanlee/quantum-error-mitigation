@@ -6,8 +6,8 @@ import matplotlib.pyplot as plt
 
 
 # params
-MODEL_FILE = 'models/model_2q_d5.pth'
-TEST_DATA_FILE = 'data/testing_dataset_2q_d5.npz'
+MODEL_FILE = 'models/model_2q_d10_01.pth'
+TEST_DATA_FILE = 'data/testing_dataset_2q_d1001.npz'
 NUM_SAMPLES_TO_PLOT = 3 # How many example plots to generate
 
 # redefine the model
@@ -94,6 +94,6 @@ if __name__ == "__main__":
         ax.legend()
         
         plt.tight_layout()
-        plt.savefig(f'figures/evaluation_sample_{i+1}.png')
+        plt.savefig(f'figures/2q_d10_01_evaluation_samples/evaluation_sample_{i+1}.png')
         
     print(f"Plots saved in 'figures/' directory.")

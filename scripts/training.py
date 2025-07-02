@@ -12,8 +12,8 @@ import matplotlib.pyplot as plt
 
 
 # define configuration params
-DATASET_FILE = 'data/dataset_2q_d5.npz'  # path to the dataset file
-MODEL_OUTPUT_FILE = 'models/model0.pth'
+DATASET_FILE = 'data/dataset_2q_d1001.npz'  # path to the dataset file
+MODEL_OUTPUT_FILE = 'models/model_2q_d10_01.pth'
 EPOCHS = 50
 BATCH_SIZE = 32
 LEARNING_RATE = 0.001

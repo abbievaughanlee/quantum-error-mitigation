@@ -13,11 +13,11 @@ from tqdm import tqdm
 NUM_QUBITS = 2 
 # number of layers of gates in each circuit
 CIRCUIT_DEPTH = 10 # increased from five for round 2
-NUM_SAMPLES = 5000
+NUM_SAMPLES = 1000
 SHOTS = 1024
 # probability of depolarizing error for each gate
-ERROR_PROB = 0.05 
-OUTPUT_FILE = f'data/dataset_{NUM_QUBITS}q_d{CIRCUIT_DEPTH}.npz'
+ERROR_PROB = 0.1
+OUTPUT_FILE = f'data/testing_dataset_{NUM_QUBITS}q_d{CIRCUIT_DEPTH}01.npz'
 
 
 # define random circuit generation function
